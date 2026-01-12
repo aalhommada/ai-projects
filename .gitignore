@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# fumadocs generated
+.source/
+
 # Project files to ignore
 ai_projects_prompt.md
 
