@@ -9,7 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.1.1",
+    "@types/mdx": "^2.0.13",
+    "fumadocs-core": "^15.8.5",
+    "fumadocs-mdx": "^13.0.8",
+    "fumadocs-ui": "^15.8.5",
+    "mermaid": "^11.12.2",
+    "next": "^15.5.9",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },

@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Project files to ignore
+ai_projects_prompt.md
+
+# Claude self-documentation (keep private)
+CLAUDE.md
