@@ -2,6 +2,8 @@ import './global.css'
 import { RootProvider } from 'fumadocs-ui/provider/next'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Suspense } from 'react'
+import { NavigationProgress } from '@/components/navigation-progress'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <body className="flex min-h-screen flex-col">
+        <Suspense fallback={null}>
+          <NavigationProgress />
+        </Suspense>
         <RootProvider>{children}</RootProvider>
       </body>
     </html>
