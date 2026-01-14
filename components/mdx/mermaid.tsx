@@ -8,6 +8,8 @@ interface MermaidProps {
   chart: string
 }
 
+let initialized = false
+
 export function Mermaid({ chart }: MermaidProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [svg, setSvg] = useState<string>('')
@@ -17,18 +19,20 @@ export function Mermaid({ chart }: MermaidProps) {
     const renderChart = async () => {
       if (!containerRef.current) return
 
-      mermaid.initialize({
-        startOnLoad: false,
-        theme: resolvedTheme === 'dark' ? 'dark' : 'default',
-        securityLevel: 'loose',
-        fontFamily: 'inherit',
-      })
+      // Initialize only once
+      if (!initialized) {
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: resolvedTheme === 'dark' ? 'dark' : 'default',
+          securityLevel: 'loose',
+          fontFamily: 'inherit',
+        })
+        initialized = true
+      }
 
       try {
-        const { svg } = await mermaid.render(
-          `mermaid-${Math.random().toString(36).slice(2)}`,
-          chart.trim()
-        )
+        const id = `mermaid-${Math.random().toString(36).slice(2)}`
+        const { svg } = await mermaid.render(id, chart.trim())
         setSvg(svg)
       } catch (error) {
         console.error('Mermaid rendering error:', error)

@@ -10,12 +10,30 @@ Retrieval-Augmented Generation combines the power of search with LLM generation 
 ## Learning Path
 
 ```mermaid
-flowchart LR
-    A[Basic RAG] --> B[Multi-Doc RAG]
-    B --> C[Hybrid Search]
-    C --> D[Reranking]
-    D --> E[Production RAG]
-    E --> F[Evaluation]
+flowchart TB
+    subgraph Basic
+        A[Document Q&A]
+    end
+    subgraph Intermediate
+        B[Multi-Doc RAG]
+        C[Hybrid Search]
+        D[Reranking]
+        E[Conversational]
+    end
+    subgraph Advanced
+        F[Production RAG]
+        G[Graph RAG]
+        H[Multi-Modal RAG]
+        I[Agentic RAG]
+    end
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
 ```
 
 ## Projects
@@ -39,10 +57,10 @@ flowchart LR
 
 | Project | Description | Time |
 |---------|-------------|------|
-| [Production RAG Pipeline](/docs/rag/advanced/production-pipeline) | End-to-end production system with evaluation | ~3 days |
-| [Graph RAG](/docs/rag/advanced/graph-rag) | Knowledge graph enhanced retrieval | ~3 days |
-| [Multi-Modal RAG](/docs/rag/advanced/multi-modal-rag) | Handle images, tables, and text together | ~4 days |
-| [Agentic RAG](/docs/rag/advanced/agentic-rag) | Self-correcting RAG with agents | ~4 days |
+| [Production RAG Pipeline](/docs/rag/advanced/production-rag) | End-to-end production system with evaluation, monitoring, caching | ~3 days |
+| [Graph RAG](/docs/rag/advanced/graph-rag) | Knowledge graph enhanced retrieval with Neo4j | ~3 days |
+| [Multi-Modal RAG](/docs/rag/advanced/multimodal-rag) | Handle images, tables, and complex PDFs | ~4 days |
+| [Agentic RAG](/docs/rag/advanced/agentic-rag) | Self-correcting RAG with autonomous agents | ~4 days |
 
 ## Why Learn RAG?
 
