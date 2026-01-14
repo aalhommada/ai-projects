@@ -1,11 +1,43 @@
 ---
-title: AI Agents
-description: Build autonomous AI agents that can reason and act
+title: AI Agents Projects
+description: Build intelligent AI agents that reason, plan, and use tools to accomplish complex tasks
 ---
 
-# AI Agents
+# AI Agents Projects
 
-Create AI systems that can plan, reason, and take actions. From simple tool-using agents to complex multi-agent systems.
+Build autonomous AI systems that think, plan, and act
+
+## AI Agents Projects
+
+Create intelligent agents that go beyond simple question-answering to accomplish complex tasks through reasoning and tool use.
+
+## Learning Path
+
+```mermaid
+flowchart TD
+    subgraph Basic
+        B1[Tool Calling Agent]
+    end
+
+    subgraph Intermediate
+        I1[ReAct Agent]
+        I2[Conversational Agent]
+        I3[Planning Agent]
+    end
+
+    subgraph Advanced
+        A1[Multi-Agent System]
+        A2[Autonomous Agent]
+        A3[Agent Evaluation]
+    end
+
+    B1 --> I1
+    I1 --> I2
+    I2 --> I3
+    I3 --> A1
+    A1 --> A2
+    A2 --> A3
+```
 
 ## Projects
 
@@ -13,28 +45,58 @@ Create AI systems that can plan, reason, and take actions. From simple tool-usin
 
 | Project | Description | Time |
 |---------|-------------|------|
-| [Tool-Using Agent](/docs/agents/basic/tool-using-agent) | Agent with web search and calculator | ~2 hours |
-| [ReAct Agent](/docs/agents/basic/react-agent) | Reasoning and acting pattern | ~3 hours |
+| [Tool Calling Agent](/docs/agents/basic/tool-calling-agent) | Build an agent that uses functions and APIs | ~2 hours |
 
 ### Intermediate
 
 | Project | Description | Time |
 |---------|-------------|------|
-| [Planning Agent](/docs/agents/intermediate/planning-agent) | Agent with multi-step planning | ~6 hours |
-| [Memory Agent](/docs/agents/intermediate/memory-agent) | Long-term memory systems | ~4 hours |
+| [ReAct Agent](/docs/agents/intermediate/react-agent) | Implement reasoning and acting patterns | ~4 hours |
+| [Conversational Agent](/docs/agents/intermediate/conversational-agent) | Add memory and context to your agents | ~4 hours |
+| [Planning Agent](/docs/agents/intermediate/planning-agent) | Build agents that plan before executing | ~5 hours |
 
 ### Advanced
 
 | Project | Description | Time |
 |---------|-------------|------|
-| [Multi-Agent System](/docs/agents/advanced/multi-agent-system) | Coordinated agent teams | ~4 days |
-| [Self-Improving Agent](/docs/agents/advanced/self-improving-agent) | Agent that learns from feedback | ~5 days |
-| [Autonomous Workflow](/docs/agents/advanced/autonomous-workflow) | End-to-end task automation | ~4 days |
+| [Multi-Agent System](/docs/agents/advanced/multi-agent-system) | Orchestrate multiple specialized agents | ~3 days |
+| [Autonomous Agent](/docs/agents/advanced/autonomous-agent) | Build self-directed agents with goal decomposition | ~4 days |
+| [Agent Evaluation](/docs/agents/advanced/agent-evaluation) | Test and evaluate agent performance | ~2 days |
+
+## Why Learn AI Agents?
+
+| Benefit | Description |
+|---------|-------------|
+| **Automation** | Agents handle complex multi-step tasks autonomously |
+| **Reasoning** | LLMs with tools can solve problems humans define |
+| **Scalability** | Deploy agents that work 24/7 without human intervention |
+| **Flexibility** | Agents adapt to new situations using reasoning |
 
 ## Key Concepts
 
-- Agent architectures (ReAct, Plan-and-Execute)
-- Tool definition and calling
-- Memory systems (short-term, long-term)
-- Multi-agent coordination
-- Safety and guardrails
+```mermaid
+mindmap
+  root((AI Agents))
+    Tool Use
+      Function Calling
+      API Integration
+      Code Execution
+    Reasoning
+      ReAct Pattern
+      Chain of Thought
+      Self-Reflection
+    Memory
+      Short-term
+      Long-term
+      Episodic
+    Planning
+      Goal Decomposition
+      Task Scheduling
+      Error Recovery
+    Multi-Agent
+      Orchestration
+      Communication
+      Specialization
+```
+
+Start with the [Tool Calling Agent](/docs/agents/basic/tool-calling-agent) project to learn the fundamentals.
