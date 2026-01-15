@@ -1,11 +1,45 @@
 ---
-title: LLM Applications
-description: Build production-ready applications powered by large language models
+title: LLM Applications Projects
+description: Build production-ready applications powered by Large Language Models
 ---
 
-# LLM Applications
+# LLM Applications Projects
 
-Build practical applications that leverage the power of large language models. From simple chatbots to complex content generation systems.
+Build real-world applications using the power of Large Language Models
+
+## LLM Applications Projects
+
+Create practical, production-ready applications that leverage LLMs for text generation, analysis, and automation.
+
+## Learning Path
+
+```mermaid
+flowchart TD
+    subgraph Basic
+        B1[Chatbot]
+        B2[Text Summarization]
+    end
+
+    subgraph Intermediate
+        I1[Structured Extraction]
+        I2[Content Generation]
+        I3[Code Assistant]
+    end
+
+    subgraph Advanced
+        A1[Multi-Modal App]
+        A2[Fine-Tuning LLMs]
+        A3[LLM Evaluation]
+    end
+
+    B1 --> B2
+    B2 --> I1
+    I1 --> I2
+    I2 --> I3
+    I3 --> A1
+    A1 --> A2
+    A2 --> A3
+```
 
 ## Projects
 
@@ -13,30 +47,59 @@ Build practical applications that leverage the power of large language models. F
 
 | Project | Description | Time |
 |---------|-------------|------|
-| [Simple Chatbot](/docs/llm-applications/basic/simple-chatbot) | Build a conversational AI with memory | ~2 hours |
-| [Text Summarizer](/docs/llm-applications/basic/text-summarizer) | Automatic document summarization | ~2 hours |
-| [Sentiment Analyzer](/docs/llm-applications/basic/sentiment-analyzer) | Analyze text sentiment and emotions | ~2 hours |
+| [Chatbot](/docs/llm-applications/basic/chatbot) | Build a conversational AI with streaming responses | ~2 hours |
+| [Text Summarization](/docs/llm-applications/basic/text-summarization) | Create a document summarizer with multiple strategies | ~2 hours |
 
 ### Intermediate
 
 | Project | Description | Time |
 |---------|-------------|------|
-| [Code Assistant](/docs/llm-applications/intermediate/code-assistant) | AI-powered coding helper | ~4 hours |
-| [Content Generator](/docs/llm-applications/intermediate/content-generator) | Generate marketing and blog content | ~4 hours |
-| [Data Extractor](/docs/llm-applications/intermediate/data-extractor) | Extract structured data from text | ~4 hours |
+| [Structured Extraction](/docs/llm-applications/intermediate/structured-extraction) | Extract structured data from unstructured text | ~4 hours |
+| [Content Generation](/docs/llm-applications/intermediate/content-generation) | Build a content generator with templates and styles | ~4 hours |
+| [Code Assistant](/docs/llm-applications/intermediate/code-assistant) | Create an AI coding assistant with context awareness | ~5 hours |
 
 ### Advanced
 
 | Project | Description | Time |
 |---------|-------------|------|
-| [Multi-Model Router](/docs/llm-applications/advanced/multi-model-router) | Route requests to optimal models | ~3 days |
-| [Fine-Tuning Pipeline](/docs/llm-applications/advanced/fine-tuning-pipeline) | Custom model training workflow | ~4 days |
-| [Evaluation Framework](/docs/llm-applications/advanced/evaluation-framework) | Automated LLM testing system | ~3 days |
+| [Multi-Modal Application](/docs/llm-applications/advanced/multi-modal-app) | Build apps that understand text, images, and audio | ~3 days |
+| [Fine-Tuning LLMs](/docs/llm-applications/advanced/fine-tuning) | Fine-tune models for domain-specific tasks | ~4 days |
+| [LLM Evaluation](/docs/llm-applications/advanced/llm-evaluation) | Comprehensive testing and evaluation frameworks | ~3 days |
+
+## Why Build LLM Applications?
+
+| Benefit | Description |
+|---------|-------------|
+| **Automation** | Automate text-heavy workflows and processes |
+| **Intelligence** | Add natural language understanding to any application |
+| **Scalability** | Handle millions of requests with proper architecture |
+| **Flexibility** | Adapt to new use cases through prompting |
 
 ## Key Concepts
 
-- Prompt engineering and optimization
-- Token management and cost control
-- Streaming responses
-- Function calling and tool use
-- Output parsing and validation
+```mermaid
+mindmap
+  root((LLM Apps))
+    Prompting
+      System Prompts
+      Few-shot Learning
+      Chain of Thought
+    Streaming
+      Server-Sent Events
+      Token Callbacks
+      Real-time UI
+    Structured Output
+      JSON Mode
+      Function Calling
+      Pydantic Models
+    Evaluation
+      Benchmarks
+      Human Feedback
+      Automated Testing
+    Production
+      Caching
+      Rate Limiting
+      Cost Management
+```
+
+Start with the [Chatbot](/docs/llm-applications/basic/chatbot) project to learn the fundamentals.
